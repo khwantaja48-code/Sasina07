@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manchester City FC</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f8fc;
+    color: #17243a;
+}
+
+/* Navigation */
+header {
+    background: #6cabdd;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #17243a;
+}
+
+/* Hero */
+.hero {
+    min-height: 450px;
+    background:
+    linear-gradient(rgba(0,30,60,.55),rgba(0,30,60,.55)),
+    url("https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1600");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    background: #6cabdd;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #17243a;
+}
+
+/* Sections */
+section {
+    padding: 60px 8%;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    color: #368bc1;
+    margin-bottom: 30px;
+}
+
+.about {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.9;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    color: #368bc1;
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.7;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #368bc1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #17243a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<header>
+    <div class="logo">MANCHESTER CITY</div>
+
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#about">ประวัติสโมสร</a>
+        <a href="#players">นักเตะ</a>
+        <a href="#news">ข่าวสาร</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <h1>MANCHESTER CITY FC</h1>
+    <p>THE CITIZENS</p>
+    <p>สโมสรฟุตบอลแมนเชสเตอร์ ซิตี้</p>
+
+    <a href="#about" class="btn">
+        สำรวจสโมสร
+    </a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="title">ประวัติสโมสร</h2>
+
+    <div class="about">
+        <p>
+        แมนเชสเตอร์ ซิตี้ เป็นสโมสรฟุตบอลจากเมืองแมนเชสเตอร์
+        ประเทศอังกฤษ ก่อตั้งขึ้นในปี ค.ศ. 1880
+        เดิมมีชื่อว่าเซนต์มาร์กส์ ก่อนเปลี่ยนชื่อเป็น
+        แมนเชสเตอร์ ซิตี้ ในปี ค.ศ. 1894
+        สโมสรมีสนามเหย้าคือเอติฮัด สเตเดียม
+        และมีแฟนบอลติดตามทั่วโลก
+        </p>
+
+        <a href="https://www.mancity.com/club"
+           target="_blank" class="btn">
+           อ่านประวัติเพิ่มเติม
+        </a>
+    </div>
+</section>
+
+<!-- PLAYERS -->
+<section id="players" style="background:white;">
+    <h2 class="title">นักเตะแมนเชสเตอร์ ซิตี้</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600"
+                 alt="ฟุตบอล">
+            <div class="card-content">
+                <h3>ทีมชุดใหญ่</h3>
+                <p>พบกับรายชื่อนักฟุตบอลและข้อมูลนักเตะของทีม</p>
+                <a href="https://www.mancity.com/players/mens"
+                   target="_blank">
+                   ดูรายชื่อนักเตะ →
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600"
+                 alt="การแข่งขันฟุตบอล">
+            <div class="card-content">
+                <h3>ทีมฟุตบอลหญิง</h3>
+                <p>ติดตามนักเตะและผลงานของทีมหญิง</p>
+                <a href="https://www.mancity.com/teams/womens"
+                   target="_blank">
+                   อ่านเพิ่มเติม →
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600"
+                 alt="สนามฟุตบอล">
+            <div class="card-content">
+                <h3>ทีมเยาวชน</h3>
+                <p>ทำความรู้จักกับนักฟุตบอลดาวรุ่งของสโมสร</p>
+                <a href="https://www.mancity.com/teams/eds"
+                   target="_blank">
+                   อ่านเพิ่มเติม →
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- NEWS -->
+<section id="news">
+    <h2 class="title">ข่าวสารและการแข่งขัน</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600"
+                 alt="ข่าวฟุตบอล">
+            <div class="card-content">
+                <h3>ข่าวสารสโมสร</h3>
+                <p>ติดตามข่าวสารและความเคลื่อนไหวล่าสุดของทีม</p>
+                <a href="https://www.mancity.com/news"
+                   target="_blank">
+                   อ่านข่าวเพิ่มเติม →
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?w=600"
+                 alt="สนามแข่งขัน">
+            <div class="card-content">
+                <h3>ตารางการแข่งขัน</h3>
+                <p>ตรวจสอบโปรแกรมการแข่งขันของแมนซิตี้</p>
+                <a href="https://www.mancity.com/fixtures"
+                   target="_blank">
+                   ดูตารางแข่งขัน →
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:white;text-align:center;">
+    <h2 class="title">ติดต่อและติดตามสโมสร</h2>
+
+    <p>เว็บไซต์อย่างเป็นทางการของ Manchester City</p>
+
+    <a href="https://www.mancity.com/"
+       target="_blank" class="btn">
+       เข้าสู่เว็บไซต์สโมสร
+    </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h2>MANCHESTER CITY FC</h2>
+    <p>THE CITIZENS</p>
+    <p>เว็บไซต์เพื่อการศึกษาและนำเสนอข้อมูลสโมสรฟุตบอล</p>
+    <p>© 2026 Manchester City Fan Website</p>
+</footer>
+
+</body>
+</html>
